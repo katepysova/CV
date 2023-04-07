@@ -1,0 +1,26 @@
+@import "../variables";
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+  }
+
+  &--primary {
+    color: rgba($color-white, 0.8);
+    background-color: $color-transparent;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid currentcolor;
+    padding: 8px 16px;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      background-color: $color-purple;
+      border-color: $color-purple;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "./variables";
+@import "./functions";
+@import "./mixins";
+
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: rem($html-font-size);
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.wrapper {
+  padding: 24px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: rem(24px);
+}
+
+.aside {
+  position: sticky;
+  top: 24px;
+  align-self: flex-start;
+}
+
+.main {
+  flex: 1;
+  overflow-x: hidden;
+  position: relative;
+  background-color: $color-background;
+  border: $border;
+  padding: 60px 30px 30px;
+  border-radius: 20px;
+}
+
+img {
+  vertical-align: top;
+}
+
+svg {
+  color: inherit;
+  width: rem(24px);
+  height: rem(24px);
+}
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.separator {
+  background-color: $color-grey;
+  margin: 32px 0;
+  height: 1.5px;
+  width: 100%;
+  border-radius: 4px;
+}

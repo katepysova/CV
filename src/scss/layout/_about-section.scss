@@ -1,0 +1,11 @@
+.about {
+  &__content {
+    padding: 24px 0;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

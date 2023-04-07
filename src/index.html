@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.webp" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside class="aside">
+        <div class="base-info">
+          <figure class="base-info__avatar-box">
+            <img class="base-info__avatar" />
+          </figure>
+          <h1 class="base-info__heading heading--primary u-center">
+            Kateryna Pysova
+          </h1>
+          <h4 class="base-info__sub-heading u-center">
+            Junior Front-End Developer
+          </h4>
+
+          <div class="separator"></div>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="mailto:katepysova97@gmail.com">
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#envelope"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Email</p>
+                  <p class="contact-value">katepysova97@gmail.com</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="tel:+380501829221">
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Phone</p>
+                  <p class="contact-value">+380501829221</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact-item">
+              <div class="contact-link" href="#">
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#location"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Location</p>
+                  <p class="contact-value">Amsterdam, NL</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <span class="social-links__icon">
+                  <svg>
+                    <use href="icons/sprite.svg#github"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <span class="social-links__icon">
+                  <svg>
+                    <use href="icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+          <a class="btn btn--primary" href="#">Download CV</a>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="nav__btn" data-name="about" id="default-open">
+                  About
+                </button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn" data-name="resume">Resume</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn" data-name="projects">Projects</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="page">
+          <section
+            id="about"
+            class="about tab-content animate__animated animate__fadeIn"
+          >
+            <h2 class="heading--secondary">About Me</h2>
+            <div class="about__content">
+              <div class="about__about">
+                <p class="paragraph">
+                  Driven forward by the insatiable desire to learn and apply
+                  what has been learned.
+                </p>
+                <p class="paragraph">
+                  Having received a Master's degree in Applied Mathematics, I
+                  have gained valuable insight on how to approach any challenge
+                  in a structured and comprehensive manner. While studying I
+                  have gained acquaintance with various fields, such as finance
+                  math, data science and computer vision, but found myself most
+                  interested in Software Development.
+                </p>
+                <p class="paragraph">
+                  My educational background has helped me to develop a strategic
+                  mindset, along with decent time management skills and the
+                  ability to digest large volumes of technical information under
+                  short periods of time.
+                </p>
+                <p class="paragraph">
+                  My current area of professional interest is Frontend
+                  Development.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="resume" class="tab-content">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </section>
+
+          <div id="projects" class="tab-content">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

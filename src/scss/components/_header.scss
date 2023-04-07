@@ -1,0 +1,45 @@
+@import "../variables";
+
+.nav {
+  position: absolute;
+  padding: 0 40px;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 30px;
+  background-color: $color-grey;
+  border-left: $border;
+  border-bottom: $border;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    background-color: $color-transparent;
+    color: rgba($color-white, 0.8);
+    border: none;
+    padding: 20px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s;
+
+    &.active,
+    &:hover,
+    &:active {
+      color: $color-purple;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.05) translateY(-2px);
+    }
+  }
+}
+
+.tab-content {
+  &.hidden {
+    display: none;
+  }
+}
