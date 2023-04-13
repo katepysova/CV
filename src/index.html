@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
+    <title>Pysova Kateryna - CV</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -19,7 +19,11 @@
       <aside class="aside">
         <div class="base-info">
           <figure class="base-info__avatar-box">
-            <img class="base-info__avatar" />
+            <img
+              class="base-info__avatar"
+              src="images/avatar.jpg"
+              alt="avatar"
+            />
           </figure>
           <h1 class="base-info__heading heading--primary u-center">
             Kateryna Pysova
@@ -116,12 +120,12 @@
                 <button class="nav__btn" data-name="about">About</button>
               </li>
               <li class="nav__item">
-                <button class="nav__btn" data-name="resume" id="default-open">
-                  Resume
-                </button>
+                <button class="nav__btn" data-name="resume">Resume</button>
               </li>
               <li class="nav__item">
-                <button class="nav__btn" data-name="projects">Projects</button>
+                <button class="nav__btn" data-name="projects" id="default-open">
+                  Projects
+                </button>
               </li>
             </ul>
           </nav>
@@ -271,7 +275,7 @@
                   <li class="resume__item">
                     <ul class="resume__list">
                       <li class="resume__item">
-                        <h4 class="resume__item-title">
+                        <h4 class="resume__item-title title">
                           Odessa I.I.Mechnikov National University
                         </h4>
                         <p class="paragraph">
@@ -294,8 +298,8 @@
                       <img src="images/flags/uk.svg" alt="English" />
                     </div>
                     <div class="resume__language-info">
-                      <h4 class="resume__language-value">English</h4>
-                      <p class="resume__language-level">
+                      <h4 class="resume__language-value title">English</h4>
+                      <p class="resume__language-level text">
                         Professional working proficiency
                       </p>
                     </div>
@@ -305,8 +309,8 @@
                       <img src="images/flags/ukraine.svg" alt="Ukrainian" />
                     </div>
                     <div class="resume__language-info">
-                      <h4 class="resume__language-value">Ukrainian</h4>
-                      <p class="resume__language-level">Native</p>
+                      <h4 class="resume__language-value title">Ukrainian</h4>
+                      <p class="resume__language-level text">Native</p>
                     </div>
                   </li>
                   <li class="resume__language">
@@ -314,8 +318,8 @@
                       <img src="images/flags/russian.svg" alt="Russian" />
                     </div>
                     <div class="resume__language-info">
-                      <h4 class="resume__language-value">Russian</h4>
-                      <p class="resume__language-level">
+                      <h4 class="resume__language-value title">Russian</h4>
+                      <p class="resume__language-level text">
                         Full professional proficiency
                       </p>
                     </div>
@@ -336,11 +340,11 @@
                       <img src="images/courses/udemy.png" alt="udemy" />
                     </div>
                     <div class="resume__certificate-data">
-                      <h4 class="resume__certificate-title">
+                      <h4 class="resume__certificate-title title">
                         Build Responsive Real-World Websites with HTML and CSS
                       </h4>
-                      <p class="resume__certificate-organization">Udemy</p>
-                      <p class="resume__certificate-date">
+                      <p class="resume__certificate-organization text">Udemy</p>
+                      <p class="resume__certificate-date text">
                         Issued April 2, 2020
                       </p>
                     </div>
@@ -353,11 +357,13 @@
                       <img src="images/courses/coursera.png" alt="coursera" />
                     </div>
                     <div class="resume__certificate-data">
-                      <h4 class="resume__certificate-title">
+                      <h4 class="resume__certificate-title title">
                         Version Control with Git
                       </h4>
-                      <p class="resume__certificate-organization">Coursera</p>
-                      <p class="resume__certificate-date">
+                      <p class="resume__certificate-organization text">
+                        Coursera
+                      </p>
+                      <p class="resume__certificate-date text">
                         Issued May 22, 2020
                       </p>
                     </div>
@@ -370,12 +376,12 @@
                       <img src="images/courses/udemy.png" alt="udemy" />
                     </div>
                     <div class="resume__certificate-data">
-                      <h4 class="resume__certificate-title">
+                      <h4 class="resume__certificate-title title">
                         Advanced CSS and Sass: Flexbox, Grid, Animations and
                         More!
                       </h4>
-                      <p class="resume__certificate-organization">Udemy</p>
-                      <p class="resume__certificate-date">
+                      <p class="resume__certificate-organization text">Udemy</p>
+                      <p class="resume__certificate-date text">
                         Issued April 24, 2021
                       </p>
                     </div>
@@ -388,14 +394,16 @@
                       <img src="images/courses/EF_SET.png" alt="EF SET" />
                     </div>
                     <div class="resume__certificate-data">
-                      <h4 class="resume__certificate-title">
+                      <h4 class="resume__certificate-title title">
                         EF SET English Certificate 64/100 (C1 Advanced)EF SET
                         English Certificate 64/100 (C1 Advanced)
                       </h4>
-                      <p class="resume__certificate-organization">
+                      <p class="resume__certificate-organization text">
                         EF Standard English Test
                       </p>
-                      <p class="resume__certificate-date">Issued March, 2023</p>
+                      <p class="resume__certificate-date text">
+                        Issued March, 2023
+                      </p>
                     </div>
                   </a>
                 </div>
@@ -407,8 +415,144 @@
             id="projects"
             class="projects animate__animated animate__fadeIn tab-content"
           >
-            <h2 class="heading--secondary">Projects</h2>
-            <div class="resume__content"></div>
+            <h2 class="heading--secondary">Pet Projects</h2>
+            <div class="projects__content">
+              <div class="projects__list">
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/space-clicker.png"
+                      alt="space and alien"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Desktop Space Clicker
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Space-Clicker/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Space-Clicker"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/cats-api.png"
+                      alt="space and alien"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Cats API (in progress)
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/CatsApi"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img src="images/projects/rhytm.png" alt="cats" />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Rhytm - Guitar Shop Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Rhytm-Guitar-Shop/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Rhytm-Guitar-Shop"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/real-estate.png"
+                      alt="Guitar Shop"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      RealEstate Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/RealEstate/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/RealEstate"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img src="images/projects/farm-vest.png" alt="agriculure" />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      FarmVest Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Farm-Vest/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Farm-Vest"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </main>

@@ -1,0 +1,73 @@
+@import "../variables";
+@import "../mixins";
+
+.projects {
+  &__content {
+    margin-top: 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  &__project {
+    border-radius: 18px;
+    border: $border;
+    overflow: hidden;
+    background-color: $color-grey;
+
+    &-image {
+      position: relative;
+      padding-bottom: 60%;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &-data {
+      padding: 18px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &-title {
+      color: $color-purple;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    &-link {
+      &:link,
+      &:visited {
+        transition: all 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-purple;
+      }
+    }
+  }
+}
