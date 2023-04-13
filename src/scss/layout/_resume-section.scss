@@ -70,30 +70,30 @@
   &__certificate {
     &:link,
     &:visited {
-        border: $border;
-        padding: 24px;
-        border-radius: 16px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        gap: 24px;
-        background-color: $color-grey;
-        transition: all .2s;
+      border: $border;
+      padding: 24px;
+      border-radius: 16px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      gap: 24px;
+      background-color: $color-grey;
+      transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-        border-color: $color-purple;
+      border-color: $color-purple;
     }
- 
 
     &-logo {
-        background-color: $color-white;
-        align-self: stretch;
-        justify-self: stretch;
-        display: flex;
-        padding: 12px;
-        border-radius: 8px;
+      background-color: $color-white;
+      align-self: stretch;
+      justify-self: stretch;
+      display: flex;
+      padding: 12px;
+      border-radius: 8px;
+
       img {
         margin: auto;
         width: 100%;
@@ -101,27 +101,66 @@
     }
 
     &-title {
-        @include line-clip(2, $is-flex-item: true);
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
+      @include line-clip(2, $is-flex-item: true);
+
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
     }
 
     &-data {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
 
     &-organization,
     &-date {
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 300;
     }
 
     &-organization {
-        text-transform: capitalize;
+      text-transform: capitalize;
+    }
+  }
+
+  &__languages {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &-flag {
+      img {
+        width: 54px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &-value {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    &-level {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 300;
     }
   }
 }

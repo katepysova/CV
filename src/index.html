@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
   </head>
 
   <body>
@@ -32,7 +32,11 @@
 
           <ul class="contact-list">
             <li class="contact-item">
-              <a class="contact-link" href="mailto:katepysova97@gmail.com">
+              <a
+                class="contact-link"
+                href="mailto:katepysova97@gmail.com"
+                target="_blank"
+              >
                 <div class="contact-icon">
                   <svg>
                     <use href="icons/sprite.svg#envelope"></use>
@@ -45,7 +49,7 @@
               </a>
             </li>
             <li class="contact-item">
-              <a class="contact-link" href="tel:+380501829221">
+              <a class="contact-link" href="tel:+380501829221" target="_blank">
                 <div class="contact-icon">
                   <svg>
                     <use href="icons/sprite.svg#phone"></use>
@@ -58,7 +62,7 @@
               </a>
             </li>
             <li class="contact-item">
-              <div class="contact-link" href="#">
+              <div class="contact-link">
                 <div class="contact-icon">
                   <svg>
                     <use href="icons/sprite.svg#location"></use>
@@ -73,7 +77,11 @@
           </ul>
           <ul class="social-links__list">
             <li class="social-links__item">
-              <a class="social-links__link" href="#">
+              <a
+                class="social-links__link"
+                href="https://github.com/katepysova"
+                target="_blank"
+              >
                 <span class="social-links__icon">
                   <svg>
                     <use href="icons/sprite.svg#github"></use>
@@ -82,7 +90,11 @@
               </a>
             </li>
             <li class="social-links__item">
-              <a class="social-links__link" href="#">
+              <a
+                class="social-links__link"
+                href="https://www.linkedin.com/in/kateryna-pysova-b7871718b/"
+                target="_blank"
+              >
                 <span class="social-links__icon">
                   <svg>
                     <use href="icons/sprite.svg#linkedin"></use>
@@ -276,6 +288,39 @@
 
               <div class="resume__languages">
                 <h3 class="resume__sub-heading heading--tertiary">Languages</h3>
+                <ul class="resume__languages-list">
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/uk.svg" alt="English" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value">English</h4>
+                      <p class="resume__language-level">
+                        Professional working proficiency
+                      </p>
+                    </div>
+                  </li>
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/ukraine.svg" alt="Ukrainian" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value">Ukrainian</h4>
+                      <p class="resume__language-level">Native</p>
+                    </div>
+                  </li>
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/russian.svg" alt="Russian" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value">Russian</h4>
+                      <p class="resume__language-level">
+                        Full professional proficiency
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
 
               <div class="resume__certificates">
@@ -288,14 +333,16 @@
                     href="https://www.udemy.com/certificate/UC-ef80835c-1101-4a03-8d45-e9660919c262/"
                   >
                     <div class="resume__certificate-logo">
-                      <img src="images/udemy.png" alt="udemy" />
+                      <img src="images/courses/udemy.png" alt="udemy" />
                     </div>
                     <div class="resume__certificate-data">
                       <h4 class="resume__certificate-title">
                         Build Responsive Real-World Websites with HTML and CSS
                       </h4>
                       <p class="resume__certificate-organization">Udemy</p>
-                      <p class="resume__certificate-date">April 2, 2020</p>
+                      <p class="resume__certificate-date">
+                        Issued April 2, 2020
+                      </p>
                     </div>
                   </a>
                   <a
@@ -303,14 +350,16 @@
                     href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
                   >
                     <div class="resume__certificate-logo">
-                      <img src="images/coursera.png" alt="coursera" />
+                      <img src="images/courses/coursera.png" alt="coursera" />
                     </div>
                     <div class="resume__certificate-data">
                       <h4 class="resume__certificate-title">
                         Version Control with Git
                       </h4>
                       <p class="resume__certificate-organization">Coursera</p>
-                      <p class="resume__certificate-date">May 22, 2020</p>
+                      <p class="resume__certificate-date">
+                        Issued May 22, 2020
+                      </p>
                     </div>
                   </a>
                   <a
@@ -318,14 +367,17 @@
                     href="https://www.udemy.com/certificate/UC-06cbe1bd-9d40-4ff0-8e1c-9728e7ad3cb4/"
                   >
                     <div class="resume__certificate-logo">
-                      <img src="images/udemy.png" alt="udemy" />
+                      <img src="images/courses/udemy.png" alt="udemy" />
                     </div>
                     <div class="resume__certificate-data">
                       <h4 class="resume__certificate-title">
-                        Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                        Advanced CSS and Sass: Flexbox, Grid, Animations and
+                        More!
                       </h4>
                       <p class="resume__certificate-organization">Udemy</p>
-                      <p class="resume__certificate-date">April 24, 2021</p>
+                      <p class="resume__certificate-date">
+                        Issued April 24, 2021
+                      </p>
                     </div>
                   </a>
                   <a
@@ -333,14 +385,17 @@
                     href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
                   >
                     <div class="resume__certificate-logo">
-                      <img src="images/EF_SET.png" alt="EF SET" />
+                      <img src="images/courses/EF_SET.png" alt="EF SET" />
                     </div>
                     <div class="resume__certificate-data">
                       <h4 class="resume__certificate-title">
-                        EF SET English Certificate 64/100 (C1 Advanced)EF SET English Certificate 64/100 (C1 Advanced)
+                        EF SET English Certificate 64/100 (C1 Advanced)EF SET
+                        English Certificate 64/100 (C1 Advanced)
                       </h4>
-                      <p class="resume__certificate-organization">EF Standard English Test</p>
-                      <p class="resume__certificate-date">March, 2023</p>
+                      <p class="resume__certificate-organization">
+                        EF Standard English Test
+                      </p>
+                      <p class="resume__certificate-date">Issued March, 2023</p>
                     </div>
                   </a>
                 </div>
