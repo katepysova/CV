@@ -1,0 +1,127 @@
+@import "../variables";
+@import "../mixins";
+
+.resume {
+  &__content {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__sub-heading {
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 32px;
+    position: relative;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &::before {
+      content: "";
+      box-sizing: content-box;
+      line-height: 24px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      background-color: $color-purple;
+      border-radius: 50%;
+      transform: translateY(50%);
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      background-color: $color-grey;
+      width: 2px;
+      height: calc(100% + 4px);
+      position: absolute;
+      top: 18px;
+      left: 6px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__certificates {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+  }
+
+  &__certificate {
+    &:link,
+    &:visited {
+        border: $border;
+        padding: 24px;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 24px;
+        background-color: $color-grey;
+        transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+        border-color: $color-purple;
+    }
+ 
+
+    &-logo {
+        background-color: $color-white;
+        align-self: stretch;
+        justify-self: stretch;
+        display: flex;
+        padding: 12px;
+        border-radius: 8px;
+      img {
+        margin: auto;
+        width: 100%;
+      }
+    }
+
+    &-title {
+        @include line-clip(2, $is-flex-item: true);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    &-data {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &-organization,
+    &-date {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+    &-organization {
+        text-transform: capitalize;
+    }
+  }
+}

@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml" />
   </head>
 
   <body>
@@ -101,12 +101,12 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <button class="nav__btn" data-name="about" id="default-open">
-                  About
-                </button>
+                <button class="nav__btn" data-name="about">About</button>
               </li>
               <li class="nav__item">
-                <button class="nav__btn" data-name="resume">Resume</button>
+                <button class="nav__btn" data-name="resume" id="default-open">
+                  Resume
+                </button>
               </li>
               <li class="nav__item">
                 <button class="nav__btn" data-name="projects">Projects</button>
@@ -224,7 +224,128 @@
             class="resume animate__animated animate__fadeIn tab-content"
           >
             <h2 class="heading--secondary">Resume</h2>
-            <div class="resume__content"></div>
+            <div class="resume__content">
+              <div class="resume__education">
+                <h3 class="resume__sub-heading heading--tertiary">Education</h3>
+                <ul class="resume__list">
+                  <li class="resume__item">
+                    <h4 class="resume__item-title">
+                      Odessa I.I.Mechnikov National University
+                    </h4>
+                    <p class="paragraph">
+                      Master's degree, Applied Mathematics
+                    </p>
+                    <p class="paragraph">
+                      September 2019 &#8211; December 2020
+                    </p>
+                  </li>
+                  <li class="resume__item">
+                    <h4 class="resume__item-title">
+                      Odessa I.I.Mechnikov National University
+                    </h4>
+                    <p class="paragraph">
+                      Bachelors's degree, Applied Mathematics
+                    </p>
+                    <p class="paragraph">September 2015 &#8211; June 2019</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume__work">
+                <h3 class="resume__sub-heading heading--tertiary">
+                  Experience
+                </h3>
+                <ul class="resume__list">
+                  <li class="resume__item">
+                    <ul class="resume__list">
+                      <li class="resume__item">
+                        <h4 class="resume__item-title">
+                          Odessa I.I.Mechnikov National University
+                        </h4>
+                        <p class="paragraph">
+                          Master's degree, Applied Mathematics
+                        </p>
+                        <p class="paragraph">
+                          September 2019 &#8211; December 2020
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume__languages">
+                <h3 class="resume__sub-heading heading--tertiary">Languages</h3>
+              </div>
+
+              <div class="resume__certificates">
+                <h3 class="resume__sub-heading heading--tertiary">
+                  Certificates
+                </h3>
+                <div class="resume__certificates-list">
+                  <a
+                    class="resume__certificate"
+                    href="https://www.udemy.com/certificate/UC-ef80835c-1101-4a03-8d45-e9660919c262/"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/udemy.png" alt="udemy" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title">
+                        Build Responsive Real-World Websites with HTML and CSS
+                      </h4>
+                      <p class="resume__certificate-organization">Udemy</p>
+                      <p class="resume__certificate-date">April 2, 2020</p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/coursera.png" alt="coursera" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title">
+                        Version Control with Git
+                      </h4>
+                      <p class="resume__certificate-organization">Coursera</p>
+                      <p class="resume__certificate-date">May 22, 2020</p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.udemy.com/certificate/UC-06cbe1bd-9d40-4ff0-8e1c-9728e7ad3cb4/"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/udemy.png" alt="udemy" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title">
+                        Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                      </h4>
+                      <p class="resume__certificate-organization">Udemy</p>
+                      <p class="resume__certificate-date">April 24, 2021</p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/EF_SET.png" alt="EF SET" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title">
+                        EF SET English Certificate 64/100 (C1 Advanced)EF SET English Certificate 64/100 (C1 Advanced)
+                      </h4>
+                      <p class="resume__certificate-organization">EF Standard English Test</p>
+                      <p class="resume__certificate-date">March, 2023</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section
