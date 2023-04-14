@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pysova Kateryna - CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside class="aside">
+        <div class="base-info">
+          <figure class="base-info__avatar-box">
+            <img
+              class="base-info__avatar"
+              src="images/avatar.jpg"
+              alt="avatar"
+            />
+          </figure>
+          <h1 class="base-info__heading heading--primary u-center">
+            Kateryna Pysova
+          </h1>
+          <h4 class="base-info__sub-heading u-center">
+            Junior Front-End Developer
+          </h4>
+
+          <div class="separator"></div>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a
+                class="contact-link"
+                href="mailto:katepysova97@gmail.com"
+                target="_blank"
+              >
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#envelope"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Email</p>
+                  <p class="contact-value">katepysova97@gmail.com</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="tel:+380501829221" target="_blank">
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Phone</p>
+                  <p class="contact-value">+380501829221</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact-item">
+              <div class="contact-link">
+                <div class="contact-icon">
+                  <svg>
+                    <use href="icons/sprite.svg#location"></use>
+                  </svg>
+                </div>
+                <div class="contact-body">
+                  <p class="contact-title">Location</p>
+                  <p class="contact-value">Amsterdam, NL</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a
+                class="social-links__link"
+                href="https://github.com/katepysova"
+                target="_blank"
+              >
+                <span class="social-links__icon">
+                  <svg>
+                    <use href="icons/sprite.svg#github"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                class="social-links__link"
+                href="https://www.linkedin.com/in/kateryna-pysova-b7871718b/"
+                target="_blank"
+              >
+                <span class="social-links__icon">
+                  <svg>
+                    <use href="icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+          <a class="btn btn--primary" href="#">Download CV</a>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="nav__btn" data-name="about" id="default-open">
+                  About
+                </button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn" data-name="resume">Resume</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__btn" data-name="projects">Projects</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="page">
+          <section
+            id="about"
+            class="about tab-content animate__animated animate__fadeIn"
+          >
+            <h2 class="heading--secondary">About Me</h2>
+            <div class="about__content">
+              <div class="about__about">
+                <p class="paragraph">
+                  Driven forward by the insatiable desire to learn and apply
+                  what has been learned.
+                </p>
+                <p class="paragraph">
+                  Having received a Master's degree in Applied Mathematics, I
+                  have gained valuable insight on how to approach any challenge
+                  in a structured and comprehensive manner. While studying I
+                  have gained acquaintance with various fields, such as finance
+                  math, data science and computer vision, but found myself most
+                  interested in Software Development.
+                </p>
+                <p class="paragraph">
+                  My educational background has helped me to develop a strategic
+                  mindset, along with decent time management skills and the
+                  ability to digest large volumes of technical information under
+                  short periods of time.
+                </p>
+                <p class="paragraph">
+                  My current area of professional interest is Frontend
+                  Development.
+                </p>
+              </div>
+              <div class="about__stack">
+                <h3 class="about__stack-heading heading--tertiary">
+                  What I'm doing
+                </h3>
+                <p class="paragraph">
+                  My primary technological stack includes:
+                </p>
+                <div class="about__list">
+                  <div class="about__item">
+                    <div class="about__item-logo">
+                      <svg>
+                        <use href="icons/sprite.svg#html"></use>
+                      </svg>
+                    </div>
+                    <h4 class="about__item-title u-center">HTML</h4>
+                    <p class="about__item-description u-center">
+                      Creating layout with HTML5 using BEM methodology.
+                      Experience in creating layout for emails.
+                    </p>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__item-logo">
+                      <svg>
+                        <use href="icons/sprite.svg#css"></use>
+                      </svg>
+                    </div>
+                    <h4 class="about__item-title u-center">CSS, SASS / SCSS</h4>
+                    <p class="about__item-description u-center">
+                      Responsive and adaptive layout with modern CSS3 / SASS
+                      technologies.
+                    </p>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__item-logo">
+                      <svg>
+                        <use href="icons/sprite.svg#javascript"></use>
+                      </svg>
+                    </div>
+                    <h4 class="about__item-title u-center">JS, React.JS</h4>
+                    <p class="about__item-description u-center">
+                      Gulp, Webpack, Code Formatters &ndash; ESLint, StyleLint,
+                      Prettier.
+                    </p>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__item-logo">
+                      <svg>
+                        <use href="icons/sprite.svg#github"></use>
+                      </svg>
+                    </div>
+                    <h4 class="about__item-title u-center">Git</h4>
+                    <p class="about__item-description u-center">
+                      Experience with Husky pre-commit and GitHub Pages.
+                    </p>
+                  </div>
+
+                  <div class="about__item">
+                    <div class="about__item-logo">
+                      <svg>
+                        <use href="icons/sprite.svg#other"></use>
+                      </svg>
+                    </div>
+                    <h4 class="about__item-title u-center">Jira and Figma</h4>
+                    <p class="about__item-description u-center">
+                      Knowledge of Jira and Figma at the level required for
+                      work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="resume"
+            class="resume animate__animated animate__fadeIn tab-content"
+          >
+            <h2 class="heading--secondary">Resume</h2>
+            <div class="resume__content">
+              <div class="resume__education">
+                <h3 class="resume__sub-heading heading--tertiary">Education</h3>
+                <ul class="resume__list">
+                  <li class="resume__item">
+                    <h4 class="resume__item-title">
+                      Odessa I.I.Mechnikov National University
+                    </h4>
+                    <p class="paragraph">
+                      Master's degree, Applied Mathematics
+                    </p>
+                    <p class="paragraph">
+                      September 2019 &#8211; December 2020
+                    </p>
+                  </li>
+                  <li class="resume__item">
+                    <h4 class="resume__item-title">
+                      Odessa I.I.Mechnikov National University
+                    </h4>
+                    <p class="paragraph">
+                      Bachelors's degree, Applied Mathematics
+                    </p>
+                    <p class="paragraph">September 2015 &#8211; June 2019</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume__work">
+                <h3 class="resume__sub-heading heading--tertiary">
+                  Experience
+                </h3>
+                <ul class="resume__list">
+                  <li class="resume__item">
+                    <ul class="resume__list">
+                      <li class="resume__item">
+                        <h4 class="resume__item-title title">
+                          Odessa I.I.Mechnikov National University
+                        </h4>
+                        <p class="paragraph">
+                          Master's degree, Applied Mathematics
+                        </p>
+                        <p class="paragraph">
+                          September 2019 &#8211; December 2020
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume__languages">
+                <h3 class="resume__sub-heading heading--tertiary">Languages</h3>
+                <ul class="resume__languages-list">
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/uk.svg" alt="English" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value title">English</h4>
+                      <p class="resume__language-level text">
+                        Professional working proficiency
+                      </p>
+                    </div>
+                  </li>
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/ukraine.svg" alt="Ukrainian" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value title">Ukrainian</h4>
+                      <p class="resume__language-level text">Native</p>
+                    </div>
+                  </li>
+                  <li class="resume__language">
+                    <div class="resume__language-flag">
+                      <img src="images/flags/russian.svg" alt="Russian" />
+                    </div>
+                    <div class="resume__language-info">
+                      <h4 class="resume__language-value title">Russian</h4>
+                      <p class="resume__language-level text">
+                        Full professional proficiency
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume__certificates">
+                <h3 class="resume__sub-heading heading--tertiary">
+                  Certificates
+                </h3>
+                <div class="resume__certificates-list">
+                  <a
+                    class="resume__certificate"
+                    href="https://www.udemy.com/certificate/UC-ef80835c-1101-4a03-8d45-e9660919c262/"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/courses/udemy.png" alt="udemy" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title title">
+                        Build Responsive Real-World Websites with HTML and CSS
+                      </h4>
+                      <p class="resume__certificate-organization text">Udemy</p>
+                      <p class="resume__certificate-date text">
+                        Issued April 2, 2020
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/courses/coursera.png" alt="coursera" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title title">
+                        Version Control with Git
+                      </h4>
+                      <p class="resume__certificate-organization text">
+                        Coursera
+                      </p>
+                      <p class="resume__certificate-date text">
+                        Issued May 22, 2020
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.udemy.com/certificate/UC-06cbe1bd-9d40-4ff0-8e1c-9728e7ad3cb4/"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/courses/udemy.png" alt="udemy" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title title">
+                        Advanced CSS and Sass: Flexbox, Grid, Animations and
+                        More!
+                      </h4>
+                      <p class="resume__certificate-organization text">Udemy</p>
+                      <p class="resume__certificate-date text">
+                        Issued April 24, 2021
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    class="resume__certificate"
+                    href="https://www.coursera.org/account/accomplishments/certificate/8CU4CGE4Q95C"
+                  >
+                    <div class="resume__certificate-logo">
+                      <img src="images/courses/EF_SET.png" alt="EF SET" />
+                    </div>
+                    <div class="resume__certificate-data">
+                      <h4 class="resume__certificate-title title">
+                        EF SET English Certificate 64/100 (C1 Advanced)EF SET
+                        English Certificate 64/100 (C1 Advanced)
+                      </h4>
+                      <p class="resume__certificate-organization text">
+                        EF Standard English Test
+                      </p>
+                      <p class="resume__certificate-date text">
+                        Issued March, 2023
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="projects"
+            class="projects animate__animated animate__fadeIn tab-content"
+          >
+            <h2 class="heading--secondary">Pet Projects</h2>
+            <div class="projects__content">
+              <div class="projects__list">
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/space-clicker.png"
+                      alt="space and alien"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Desktop Space Clicker
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Space-Clicker/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Space-Clicker"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/cats-api.png"
+                      alt="space and alien"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Cats API (in progress)
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/CatsApi"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img src="images/projects/rhytm.png" alt="cats" />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      Rhytm - Guitar Shop Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Rhytm-Guitar-Shop/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Rhytm-Guitar-Shop"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img
+                      src="images/projects/real-estate.png"
+                      alt="Guitar Shop"
+                    />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      RealEstate Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/RealEstate/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/RealEstate"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="projects__project animate__animated animate__zoomIn"
+                >
+                  <div class="projects__project-image">
+                    <img src="images/projects/farm-vest.png" alt="agriculure" />
+                  </div>
+                  <div class="projects__project-data">
+                    <h4 class="projects__project-title title u-center">
+                      FarmVest Landing Page
+                    </h4>
+                    <div class="projects__project-links u-center">
+                      <a
+                        class="projects__project-link text"
+                        href="https://katepysova.github.io/Farm-Vest/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                      <a
+                        class="projects__project-link text"
+                        href="https://github.com/katepysova/Farm-Vest"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
