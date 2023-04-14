@@ -25,6 +25,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gift": "^0.10.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -49,5 +50,8 @@
     "stylelint-prettier": "^2.0.0",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
+  },
+  "resolutions": {
+    "gift": "@0.10.2"
   }
 }
