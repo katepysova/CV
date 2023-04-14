@@ -9,6 +9,7 @@ tabLinks.forEach((link) => {
     const name = this.getAttribute("data-name");
     const target = document.getElementById(name);
     target.classList.remove("hidden");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 

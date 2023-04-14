@@ -10,10 +10,15 @@
   background-color: $color-grey;
   border-left: $border;
   border-bottom: $border;
+  height: $header-height;
 
   &__list {
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-content: center;
+    }
   }
 
   &__btn {
@@ -35,6 +40,16 @@
     &:active {
       transform: scale(1.05) translateY(-2px);
     }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    background-color: rgba($color-dark-grey, 0.9);
+    border-radius: 0;
   }
 }
 

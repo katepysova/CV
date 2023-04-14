@@ -28,18 +28,39 @@ body {
 }
 
 .wrapper {
-  padding: 24px 0;
+  padding: 24px 48px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   display: flex;
   gap: rem(24px);
+
+  @media only screen and (max-width: $bp-extra-large) {
+    padding: 32px 48px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 24px;
+    gap: 24px;
+    padding-bottom: calc($header-height + 24px);
+  }
 }
 
 .aside {
   position: sticky;
   top: 24px;
   align-self: flex-start;
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    top: 0;
+    align-self: stretch;
+  }
 }
 
 .main {
@@ -48,8 +69,12 @@ body {
   position: relative;
   background-color: $color-background;
   border: $border;
-  padding: 60px 30px 30px;
+  padding: 80px 30px 30px;
   border-radius: 20px;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 24px 18px;
+  }
 }
 
 img {
