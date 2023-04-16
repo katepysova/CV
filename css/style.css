@@ -121,7 +121,7 @@ ul {
 .heading--secondary::after {
   content: "";
   display: inline-block;
-  width: 35%;
+  width: 40px;
   height: 4px;
   border-radius: 8px;
   position: absolute;
