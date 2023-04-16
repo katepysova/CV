@@ -161,12 +161,22 @@ ul {
   line-height: 24px;
 }
 
+.sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .u-static {
   overflow: hidden;
 }
 
 .u-center {
   text-align: center;
+}
+
+.u-mb-small {
+  margin-bottom: 8px;
 }
 
 .base-info {
