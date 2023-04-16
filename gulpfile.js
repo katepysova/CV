@@ -74,6 +74,8 @@ const style = () =>
     .pipe(concat("style.css"))
     .pipe(gulp.dest(path.build.css));
 
+const files = () => gulp.src(path.src.files).pipe(gulp.dest(path.build.files));
+
 const js = () =>
   gulp
     .src(path.src.js, { sourcemaps: !isBuild })
@@ -176,9 +178,10 @@ const watcher = () => {
   gulp.watch(path.watch.js, js).on("change", browserSync.reload);
   gulp.watch(path.watch.images, images).on("change", browserSync.reload);
   gulp.watch(path.watch.svg, svgSprite).on("change", browserSync.reload);
+  gulp.watch(path.watch.files, files).on("change", browserSync.reload);
 };
 
-const mainTask = gulp.parallel(svgSprite, html, style, js, images);
+const mainTask = gulp.parallel(svgSprite, html, style, js, images, files);
 const dev = gulp.series(reset, mainTask, watcher);
 const build = gulp.series(reset, mainTask);
 

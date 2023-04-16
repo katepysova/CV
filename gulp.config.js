@@ -8,6 +8,7 @@ export default {
     js: `${buildFolder}/js/`,
     images: `${buildFolder}/images/`,
     svg: `${buildFolder}/icons/`,
+    files: `${buildFolder}/files/`,
   },
   src: {
     html: `${sourceFolder}/*.html`,
@@ -16,6 +17,7 @@ export default {
     images: `${sourceFolder}/images/**/*.{jpg,jpeg,png,gif,webp,ico}`,
     svgImages: `${sourceFolder}/images/**/*.svg`,
     svg: `${sourceFolder}/icons/svg/*.svg`,
+    files: `${sourceFolder}/files/**/*.*`,
   },
   watch: {
     html: `${sourceFolder}/**/*.html`,
